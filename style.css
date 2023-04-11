@@ -1,0 +1,1249 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poiret+One&family=Rajdhani&family=VT323&display=swap');
+
+
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*HEADER*/
+header {
+  height: 70px;
+  background: rgb(11, 42, 83);
+  padding: 0 50px;
+
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  text-transform: uppercase;
+  font-weight: 300px;
+}
+
+.menu a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.4s;
+  padding: 0 10px;
+}
+
+.esconder-menu,
+.mostrar-menu {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  transition: 0.4s;
+}
+
+.mostrar-menu {
+  order: 1;
+}
+
+.menu a:hover,
+.mostrar-menu:hover,
+.esconder-menu:hover {
+  color: grey;
+}
+
+#check {
+  display: none;
+}
+
+
+/*BANNER*/
+#banner {
+  padding: 50px 50px 70px;
+  background-color: black;
+  height: 55vh;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.contenido-banner {
+  position: relative;
+  color: #fff;
+  height: 100%;
+  padding: 45px 0px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenido-banner h2 {
+  font-size: 50px;
+  font-weight: 400;
+  padding: 10px 0px;
+}
+
+.contenido-banner h3 {
+  font-size: 30px;
+  font-weight: 400;
+  padding-right: 50px;
+  max-width: 55%;
+
+}
+
+.contenido-banner img {
+  position: absolute;
+  width: 350px;
+  right: 20px;
+  top: -3%;
+}
+
+.hora-col {
+  background: rgb(0, 0, 0);
+  padding: 15px;
+  color: #fff;
+  
+
+  
+}
+
+.hora-col h2 {
+  text-align: center;
+  line-height: 60px;
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+.hora-col p {
+  text-align: center;
+  line-height: 40px;
+  font-size: 50px;
+  font-family: 'Rajdhani', sans-serif;
+  padding-bottom: 20px;
+}
+
+
+.footer{
+  height: 35vh;
+  
+  background-color: rgb(11, 42, 83);
+  color: #fff;
+  line-height: 15px;
+
+  
+}
+
+.footer p{
+  text-align: center;
+  transform: translate(0, 130%);
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 25px;
+  font-size: 25px;
+}
+
+
+
+
+
+
+
+/*media*/
+@media(max-width: 1033px) {
+  #banner {
+    padding: 50px 50px 100px;
+  }
+
+
+  .contenido-banner img {
+    left: 65%;
+ 
+  }
+ 
+}
+
+@media(max-width: 969px) {
+
+  .contenido-banner img {
+   width: 300px ;
+   top: 20%;
+  }
+ 
+ 
+}
+@media(max-width: 768px) {
+
+  /*HEADER*/
+  .mostrar-menu,
+  .esconder-menu {
+    display: block;
+  }
+
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(16, 52, 98, 1);
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 10px 0px;
+    transition: 0.6s;
+    width: 300px;
+  }
+
+  .contenido-banner {
+    padding-top: 0px;
+    z-index: 1;
+    padding: 0px 0px 0px 0px;
+
+  }
+
+  .contenido-banner h3 {
+    position: absolute;
+    left: 10%;
+    max-width: 80%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contenido-banner h2 {
+    text-align: center;
+  }
+
+  .contenido-banner img {
+    z-index:-1;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .menu a {
+    display: block;
+    padding: 10px;
+  }
+
+  .esconder-menu {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+
+  #check:checked~.menu {
+    right: 0;
+  }
+
+  .footer{
+    height: 35vh;
+    
+    background-color: rgb(11, 42, 83);
+    color: #fff;
+    line-height: 20px;
+  
+    
+  }
+  
+  .footer p{
+    text-align: center;
+    transform: translate(0, 30%);
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 25px;
+    font-size: 25px;
+  }
+  
+  
+  
+
+}
+
+@media(max-width: 560px) {
+
+  #banner {
+    padding: 50px 50px 100px;
+  }
+ 
+}
+
+@media(max-width: 497px) {
+
+  #banner {
+    padding: 50px 50px 210px;
+    width: 78%;
+  }
+
+  .contenido-banner img {
+    z-index:-1;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -25%);
+  }
+
+  .footer{
+    height: 25vh;
+    
+    background-color: rgb(11, 42, 83);
+    color: #fff;
+    line-height: 20px;
+  
+    
+  }
+  
+  .footer p{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 20px;
+    font-size: 23px;
+  }
+ 
+}
+
+
+@media(max-width: 360px) {
+
+  .footer {
+    width: 380px;
+  }
+ 
+}
+
+
+
+/*card*/
+#cards {
+  padding:190px;
+  background: rgb(0, 0, 0);
+  justify-content: center;
+  display: flex;
+  flex-wrap:wrap;
+  gap: 300px;
+  
+}
+
+
+
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+
+
+.weather {
+  position: relative;
+  margin: 1em;
+}
+
+.main {
+  font-size: 23px;
+  position: relative;
+  top: -5em;
+  left: 5.3em;
+  padding: 0%;
+  width: 120px;
+}
+
+.mainsub {
+  position: relative;
+  top: -6em;
+  left: 7em;
+  font-size: 1.1em;
+  font-family: 'Rajdhani', sans-serif;
+  
+  
+}
+
+.card2 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 240px;
+  height: 130px;
+  border-radius: 35px;
+  background: rgb(41, 41, 41);
+  z-index: 1;
+  transition: .4s ease-in-out;
+}
+
+
+.upper {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  color: white;
+  left: 1.8em;
+  top: 0.5em;
+  gap: 4em;
+}
+
+.humiditytext {
+  position: relative;
+  left: 3.6em;
+  top: 2.7em;
+  font-size: 0.6em;
+}
+
+.airtext {
+  position: relative;
+  left: 3.8em;
+  top: 2.7em;
+  font-size: 0.6em;
+}
+
+.lower {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  text-align: center;
+  color: white;
+  left: 1.9em;
+  top: 1em;
+  margin-top: 0.7em;
+  font-size: 0.7em;
+  transition: .4s ease-in-out;
+}
+
+.aqi {
+  margin-right: 3.25em;
+}
+
+.realfeel {
+  margin-right: 1.8em;
+}
+
+.card3 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 30px;
+  top: 4.7em;
+  left: -1.5em;
+  font-size: 1.24em;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: #fb7542;
+  transition: .4s ease-in-out;
+}
+
+.reloj {
+  font-family: 'Courier New', Courier, monospace;
+  color: hsl(0, 0%, 100%);
+  padding: 0px;
+  width: 125px;
+
+}
+
+.reloj p{
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 500;
+}
+
+/*SOL*/
+.fechaS {
+  font-family: 'Rajdhani', sans-serif;
+  
+}
+
+
+.tiempoS {
+  font-family: 'Rajdhani', sans-serif;
+
+}
+
+.card3S {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 30px;
+  top: 4.7em;
+  left: -1.5em;
+  font-size: 1.24em;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: #fcc325;
+  transition: .4s ease-in-out;
+}
+.cardmS{
+  position: absolute;
+  width: 250px;
+  height: 130px;
+  border-radius: 25px;
+  background: rgb(41, 41, 41);
+  color: white;
+  z-index: 2;
+  transition: .4s ease-in-out;
+}
+.cardmS:hover {
+  background-color: #fcc325;
+  cursor: pointer;
+}
+
+.cardmS:hover+.card2 {
+  height: 300px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.cardmS:hover+.card2 .lower {
+  top: 20.2em;
+}
+
+
+/*MARTE*/
+.fechaM {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.tiempoM {
+  font-family: 'Rajdhani', sans-serif;
+
+}
+
+.card3M {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 30px;
+  top: 4.7em;
+  left: -1.5em;
+  font-size: 1.24em;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: #fb7542;
+  transition: .4s ease-in-out;
+}
+.cardmM{
+  position: absolute;
+  width: 250px;
+  height: 130px;
+  border-radius: 25px;
+  background: rgb(41, 41, 41);
+  color: white;
+  z-index: 2;
+  transition: .4s ease-in-out;
+}
+.cardmM:hover {
+  background-color: #fb7542;
+  cursor: pointer;
+}
+
+.cardmM:hover+.card2 {
+  height: 300px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.cardmM:hover+.card2 .lower {
+  top: 20.2em;
+}
+
+/*MERCURIO*/
+.fechaMER {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.tiempoMER {
+  font-family: 'Rajdhani', sans-serif;
+
+}
+
+.card3MER {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 30px;
+  top: 4.7em;
+  left: -1.5em;
+  font-size: 1.24em;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: #8d796d;
+  transition: .4s ease-in-out;
+}
+.cardmMER{
+  position: absolute;
+  width: 250px;
+  height: 130px;
+  border-radius: 25px;
+  background: rgb(41, 41, 41);
+  color: white;
+  z-index: 2;
+  transition: .4s ease-in-out;
+}
+.cardmMER:hover {
+  background-color: #8d796d;
+  cursor: pointer;
+}
+
+.cardmMER:hover+.card2 {
+  height: 300px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.cardmMER:hover+.card2 .lower {
+  top: 20.2em;
+}
+
+
+
+/*VENUS*/
+.fechaV {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.tiempoV {
+  font-family: 'Rajdhani', sans-serif;
+
+}
+
+.card3V {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 30px;
+  top: 4.7em;
+  left: -1.5em;
+  font-size: 1.24em;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: #ff6f00;
+  transition: .4s ease-in-out;
+}
+.cardmV{
+  position: absolute;
+  width: 250px;
+  height: 130px;
+  border-radius: 25px;
+  background: rgb(41, 41, 41);
+  color: white;
+  z-index: 2;
+  transition: .4s ease-in-out;
+}
+.cardmV:hover {
+  background-color: #ff6f00;
+  cursor: pointer;
+}
+
+.cardmV:hover+.card2 {
+  height: 300px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.cardmV:hover+.card2 .lower {
+  top: 20.2em;
+}
+
+
+
+/*TIERRA*/
+.fechaT {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.tiempoT {
+  font-family: 'Rajdhani', sans-serif;
+
+}
+
+.card3T {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 30px;
+  top: 4.7em;
+  left: -1.5em;
+  font-size: 1.24em;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: #0c1b2e;
+  transition: .4s ease-in-out;
+}
+.cardmT{
+  position: absolute;
+  width: 250px;
+  height: 130px;
+  border-radius: 25px;
+  background: rgb(41, 41, 41);
+  color: white;
+  z-index: 2;
+  transition: .4s ease-in-out;
+}
+.cardmT:hover {
+  background-color: #0c1b2e;
+  cursor: pointer;
+}
+
+.cardmT:hover+.card2 {
+  height: 300px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.cardmT:hover+.card2 .lower {
+  top: 20.2em;
+}
+
+.card3T {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 30px;
+  top: 4.7em;
+  left: -1.5em;
+  font-size: 1.24em;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: #0c1b2e;
+  transition: .4s ease-in-out;
+}
+
+/*JUPITER*/
+.fechaJ {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.tiempoJ {
+  font-family: 'Rajdhani', sans-serif;
+
+}
+
+.card3J {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 30px;
+  top: 4.7em;
+  left: -1.5em;
+  font-size: 1.24em;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: #3e1c10;
+  transition: .4s ease-in-out;
+}
+.cardmJ{
+  position: absolute;
+  width: 250px;
+  height: 130px;
+  border-radius: 25px;
+  background: rgb(41, 41, 41);
+  color: white;
+  z-index: 2;
+  transition: .4s ease-in-out;
+}
+.cardmJ:hover {
+  background-color: #3e1c10;
+  cursor: pointer;
+}
+
+.cardmJ:hover+.card2 {
+  height: 300px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.cardmJ:hover+.card2 .lower {
+  top: 20.2em;
+}
+
+
+
+/*SATURNO*/
+.fechaSAT {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.tiempoSAT {
+  font-family: 'Rajdhani', sans-serif;
+
+}
+
+.card3SAT{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 30px;
+  top: 4.7em;
+  left: -1.5em;
+  font-size: 1.24em;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: #692c00;
+  transition: .4s ease-in-out;
+}
+.cardmSAT{
+  position: absolute;
+  width: 250px;
+  height: 130px;
+  border-radius: 25px;
+  background: rgb(41, 41, 41);
+  color: white;
+  z-index: 2;
+  transition: .4s ease-in-out;
+}
+.cardmSAT:hover {
+  background-color: #692c00;
+  cursor: pointer;
+}
+
+.cardmSAT:hover+.card2 {
+  height: 300px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.cardmSAT:hover+.card2 .lower {
+  top: 20.2em;
+}
+
+/*URANO*/
+.fechaU {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.tiempoU {
+  font-family: 'Rajdhani', sans-serif;
+
+}
+
+.card3U{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 30px;
+  top: 4.7em;
+  left: -1.5em;
+  font-size: 1.24em;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: #0071a1;
+  transition: .4s ease-in-out;
+}
+.cardmU{
+  position: absolute;
+  width: 250px;
+  height: 130px;
+  border-radius: 25px;
+  background: rgb(41, 41, 41);
+  color: white;
+  z-index: 2;
+  transition: .4s ease-in-out;
+}
+.cardmU:hover {
+  background-color: #0071a1;
+  cursor: pointer;
+}
+
+.cardmU:hover+.card2 {
+  height: 300px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.cardmU:hover+.card2 .lower {
+  top: 20.2em;
+}
+
+/*NEPTUNO*/
+.fechaN {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.tiempoN {
+  font-family: 'Rajdhani', sans-serif;
+
+}
+
+.card3N{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 30px;
+  top: 4.7em;
+  left: -1.5em;
+  font-size: 1.24em;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: #17345b;
+  transition: .4s ease-in-out;
+}
+.cardmN{
+  position: absolute;
+  width: 250px;
+  height: 130px;
+  border-radius: 25px;
+  background: rgb(41, 41, 41);
+  color: white;
+  z-index: 2;
+  transition: .4s ease-in-out;
+}
+.cardmN:hover {
+  background-color: #17345b;
+  cursor: pointer;
+}
+
+.cardmN:hover+.card2 {
+  height: 300px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.cardmN:hover+.card2 .lower {
+  top: 20.2em;
+}
+
+/*FOMALHAUT*/
+.fechaF {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.tiempoF {
+  font-family: 'Rajdhani', sans-serif;
+
+}
+
+.card3F{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 30px;
+  top: 4.7em;
+  left: -1.5em;
+  font-size: 1.24em;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: #ff9900
+  ;
+  transition: .4s ease-in-out;
+}
+.cardmF{
+  position: absolute;
+  width: 250px;
+  height: 130px;
+  border-radius: 25px;
+  background: rgb(41, 41, 41);
+  color: white;
+  z-index: 2;
+  transition: .4s ease-in-out;
+}
+
+
+
+.cardmF:hover {
+  background-color: #ff9900
+  ;
+  cursor: pointer;
+}
+
+.cardmF:hover+.card2 {
+  height: 300px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.cardmF:hover+.card2 .lower {
+  top: 20.2em;
+}
+
+/*GLIESE*/
+.fechaG {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.tiempoG {
+  font-family: 'Rajdhani', sans-serif;
+
+}
+
+.card3G{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 30px;
+  top: 4.7em;
+  left: -1.5em;
+  font-size: 1.24em;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: #7e7e7e
+  ;
+  transition: .4s ease-in-out;
+}
+.cardmG{
+  position: absolute;
+  width: 250px;
+  height: 130px;
+  border-radius: 25px;
+  background: rgb(41, 41, 41);
+  color: white;
+  z-index: 2;
+  transition: .4s ease-in-out;
+}
+
+.cardmG:hover {
+  background-color: #7e7e7e ;
+  cursor: pointer;
+}
+
+.cardmG:hover+.card2 {
+  height: 300px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.cardmG:hover+.card2 .lower {
+  top: 20.2em;
+}
+
+/*GLIESE*/
+.fechaK {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.tiempoK {
+  font-family: 'Rajdhani', sans-serif;
+
+}
+
+.card3K{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 30px;
+  top: 4.7em;
+  left: -1.5em;
+  font-size: 1.24em;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: #3c5448
+  ;
+  transition: .4s ease-in-out;
+}
+.cardmK{
+  position: absolute;
+  width: 250px;
+  height: 130px;
+  border-radius: 25px;
+  background: rgb(41, 41, 41);
+  color: white;
+  z-index: 2;
+  transition: .4s ease-in-out;
+}
+
+.cardmK:hover {
+  background-color: #3c5448 ;
+  cursor: pointer;
+}
+
+.cardmK:hover+.card2 {
+  height: 300px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.cardmK:hover+.card2 .lower {
+  top: 20.2em;
+}
+
+/*TAUCETI*/
+.fechaTA {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.tiempoTA {
+  font-family: 'Rajdhani', sans-serif;
+
+}
+
+.card3TA{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 30px;
+  top: 4.7em;
+  left: -1.5em;
+  font-size: 1.24em;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: #c5ce61
+  ;
+  transition: .4s ease-in-out;
+}
+.cardmTA{
+  position: absolute;
+  width: 250px;
+  height: 130px;
+  border-radius: 25px;
+  background: rgb(41, 41, 41);
+  color: white;
+  z-index: 2;
+  transition: .4s ease-in-out;
+}
+
+.cardmTA:hover {
+  background-color: #c5ce61 ;
+  cursor: pointer;
+}
+
+.cardmTA:hover+.card2 {
+  height: 300px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.cardmTA:hover+.card2 .lower {
+  top: 20.2em;
+}
+
+/*KEPLER*/
+.fechaKE {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.tiempoKE {
+  font-family: 'Rajdhani', sans-serif;
+
+}
+
+.card3KE{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 30px;
+  top: 4.7em;
+  left: -1.5em;
+  font-size: 1.24em;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: #7a0074
+  ;
+  transition: .4s ease-in-out;
+}
+.cardmKE{
+  position: absolute;
+  width: 250px;
+  height: 130px;
+  border-radius: 25px;
+  background: rgb(41, 41, 41);
+  color: white;
+  z-index: 2;
+  transition: .4s ease-in-out;
+}
+
+.cardmKE:hover {
+  background-color: #7a0074 ;
+  cursor: pointer;
+}
+
+.cardmKE:hover+.card2 {
+  height: 300px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.cardmKE:hover+.card2 .lower {
+  top: 20.2em;
+}
+
+/*LUNA*/
+.fechaL {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.tiempoL {
+  font-family: 'Rajdhani', sans-serif;
+
+}
+
+.card3L{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 30px;
+  top: 4.7em;
+  left: -1.5em;
+  font-size: 1.24em;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+  background: #141414
+  ;
+  transition: .4s ease-in-out;
+}
+.cardmL{
+  position: absolute;
+  width: 250px;
+  height: 130px;
+  border-radius: 25px;
+  background: rgb(41, 41, 41);
+  color: white;
+  z-index: 2;
+  transition: .4s ease-in-out;
+}
+
+.cardmL:hover {
+  background-color: #141414 ;
+  cursor: pointer;
+}
+
+.cardmL:hover+.card2 {
+  height: 300px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.cardmL:hover+.card2 .lower {
+  top: 20.2em;
+}
